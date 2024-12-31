@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Otter House</title>
-    <link>http://localhost:43875/otter-blog/</link>
+    <link>http://localhost:43619/otter-blog/</link>
     <description>Recent content on Otter House</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 31 Dec 2024 20:47:18 +0700</lastBuildDate>
-    <atom:link href="http://localhost:43875/otter-blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:43619/otter-blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What is a Group?</title>
-      <link>http://localhost:43875/otter-blog/posts/group/</link>
+      <title>An Introduction to Group Theory (Part 1)</title>
+      <link>http://localhost:43619/otter-blog/posts/group/</link>
       <pubDate>Tue, 31 Dec 2024 20:47:18 +0700</pubDate>
-      <guid>http://localhost:43875/otter-blog/posts/group/</guid>
-      <description>&lt;p&gt;Before we can understand what a group is, we need to look at some other concepts.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-a-set&#34;&gt;What is a Set?&lt;/h2&gt;&#xA;&lt;p&gt;A set is a collection of unique things. You can have as many things in a set as you want.&lt;/p&gt;&#xA;&lt;p&gt;For example:&lt;/p&gt;&#xA;&lt;p&gt;O is a set of otters with 3 distinct otters named o1, o2, and o3.&lt;/p&gt;&#xA;&lt;p&gt;We can denote it like this: O = {o1, o2, o3}.&lt;/p&gt;&#xA;&lt;p&gt;This set is &lt;strong&gt;finite&lt;/strong&gt;.&lt;/p&gt;</description>
+      <guid>http://localhost:43619/otter-blog/posts/group/</guid>
+      <description>&lt;p&gt;In this first part, we will simply define what a group is. Before we can understand what a group is, we need to look at some other concepts.&#xA;We will build our intuition from each of the concepts we learn one by one.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-a-set&#34;&gt;What is a Set?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;set&lt;/strong&gt; is a collection of unique thing. We will call each thing in a set an &lt;strong&gt;element&lt;/strong&gt; of that set from now on.&#xA;We can have as many elements in a set as we want.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
