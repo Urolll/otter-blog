@@ -1,0 +1,4 @@
+baseURL = 'https://urolll.github.io/otter-blog/'
+languageCode = 'en-us'
+title = 'Otter House'
+theme = 'dead-simple'

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Otter House</title>
+    <link>http://localhost:34007/otter-blog/posts/</link>
+    <description>Recent content in Posts on Otter House</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Dec 2024 20:47:18 +0700</lastBuildDate>
+    <atom:link href="http://localhost:34007/otter-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is a Group?</title>
+      <link>http://localhost:34007/otter-blog/posts/group/</link>
+      <pubDate>Tue, 31 Dec 2024 20:47:18 +0700</pubDate>
+      <guid>http://localhost:34007/otter-blog/posts/group/</guid>
+      <description>&lt;p&gt;A group is a mathematical object.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
