@@ -6,7 +6,8 @@ math = true
 +++
 
 In this first part, we will simply define what a group is. Before we can understand what a group is, we need to look at some other concepts. 
-We will build our intuition from each of the concepts we learn one by one.
+We will build our intuition from each of the concepts we learn one by one. 
+Lastly, I would like to give a couple examples of groups.
 
 ## What is a Set?
 
@@ -177,7 +178,85 @@ So, \\( (o1 + o1) + o2 \ne o1 + (o1 + o2) \\), which means "+" in set O is not a
 
 ## What is a monoid?
 
+Some sets have a magical element inside of it. 
+This element does something very cool. 
+When you apply this element on anything in the set, either from the left or right, it magically gives back that other element.
+That element is called an **identity**, and we shall denote it with an "e". 
 
+Let's say we are in set S with operation \\( \circ \\) and for all elements \\( a \in S \\), 
+\\( e \circ a = a \circ e = a \\). You guessed it, e is an identity and this is just a more formal way to define what we did previously.
+
+Don't forget that \\( e \in S \\) as well, so this includes the fact that \\( e \circ e = e \\)
+
+Question: Does addition in \\( \mathbb{N} \\) have an identity?
+
+Answer: Yes, it's the number 0!
+
+Question: Does multiplication in \\( \mathbb{N} \\) have an identity?
+
+Answer: Yes, it's the number 1!
+
+Let \\( \mathbb{Z} \\) represent the integers. This includes all whole numbers that are positive, negative, and zero. 
+
+Question: Does addition in \\( \mathbb{Z} \\) have an identity?
+
+Answer: Yes, it's the number 0!
+
+Question: Does multiplication in \\( \mathbb{Z} \\) have an identity?
+
+Answer: Yes, it's the number 1!
+
+Question: Can a set S have multiple identities?
+
+Answer: No! This is not difficult to prove. 
+
+WLOG, consider 2 identities \\( e_1, e_2 \\). 
+
+\\( e_1 \circ e_2 = e_2 \\) since \\( e_1 \\) is an identity.
+
+Similarly, \\( e_1 \circ e_2  = e_1 \\) since \\( e_2 \\) is also an identity. 
+
+Therefore, \\( e_1 = e_2 \\), so they are the same element
+
+Now we can properly define a new algebraic structure. A **monoid** is a semigroup with an identity. In other words, it is a set S with
+a binary operation \\( \circ \\) such that this operation is closed and associative,
+and S contains an identity element.
+
+Side note: If you have seen the infamous definition of a monad where "a monad is a monoid in the category of endofunctors of some fixed category".
+Then you at least know what a monoid is in that definition.
 
 ## What is a group?
+
+We have now reached the part we have been waiting for. What exactly is a group?
+
+Before we can answer this question, there is another interesting property we should look at. 
+
+Consider a set S with an operation \\( \circ \\), and consider any element \\( a \in S \\), 
+is there an element x such that \\( a \circ x = x \circ a = e \\).
+
+In other words, is there a magical element such that when applied to our selected element, gives us the identity e.
+Such an element is called an **inverse**.
+
+Question: Does every element in \\( \mathbb{Z} \\) have an inverse under addition?
+
+Answer: Yes, for any \\( a \in \mathbb{Z} \\), the value -a is its inverse.
+
+Question: Does every element in \\( \mathbb{Z} \\) have an inverse under multiplication?
+
+Answer: No, in fact, only the identity number "1" has an inverse. 
+
+It is not difficult to guess what a group could possibly be.
+Indeed, a **group** is a monoid whose every element has an inverse. In other words, a set S with a binary operation \\( \circ \\), where \\( \circ \\) is closed and associative,
+with an identity element \\( e \in S \\) and all elements in S have an inverse.
+
+Let \\( \mathbb{R} \\) represent the set of all real numbers. 
+
+Question: Is \\( \mathbb{R} \\) under addition a group?
+
+Answer: Yes!
+
+Question: Is \\( \mathbb{R} \\) under multiplication a group?
+
+Answer: Almost...but no! The number 0 is the only number without an inverse, so not every element in \\( \mathbb{R} \\) has a multiplicative inverse.
+
 
