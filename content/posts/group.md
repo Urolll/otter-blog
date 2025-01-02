@@ -176,7 +176,7 @@ o1 + (o1 + o2) = o1 + o2 = o2
 
 So, \\( (o1 + o1) + o2 \ne o1 + (o1 + o2) \\), which means "+" in set O is not associative, so it does not form a semigroup.
 
-## What is a monoid?
+## What is a Monoid?
 
 Some sets have a magical element inside of it. 
 This element does something very cool. 
@@ -225,7 +225,7 @@ and S contains an identity element.
 Side note: If you have seen the infamous definition of a monad where "a monad is a monoid in the category of endofunctors of some fixed category".
 Then you at least know what a monoid is in that definition.
 
-## What is a group?
+## What is a Group?
 
 We have now reached the part we have been waiting for. What exactly is a group?
 
@@ -258,5 +258,78 @@ Answer: Yes!
 Question: Is \\( \mathbb{R} \\) under multiplication a group?
 
 Answer: Almost...but no! The number 0 is the only number without an inverse, so not every element in \\( \mathbb{R} \\) has a multiplicative inverse.
+
+## Group of Integers Modulo n
+
+Now we will begin a detour to look at some famous examples of groups.
+
+The **modulo operation** denoted by "%" is defined for the set \\( \mathbb{N} \\).
+When we perform a % n, the result is the **remainder** when dividing a by n.
+
+When can think of this as, if we have some amount of stuff *a*, and we subtract away *n* from it until we can't fully subtract anymore, how much do we have left?
+
+We can visualize 7 % 3 like this:
+
+We have 7 otters and we will take away 3 otters at a time
+
+7 - 3 = 4
+
+Now we have 4 otters
+
+4 - 3 = 1
+
+Now we have 1 otter, so we have to stop (because there is not enough otters to take away 3)
+
+Our remainder is 1, so 7 % 3 = 1
+
+Let's define a set \\( \mathbb{Z}_n \\) called the **group of integers modulo n** starting from 0 up to n-1.
+
+For example,
+
+\\( \mathbb{Z}_3 = \\) {0, 1, 2}
+
+\\( \mathbb{Z}_4 = \\) {0, 1, 2, 3}
+
+\\( \mathbb{Z}_7 = \\) {0, 1, 2, 3, 4, 5, 6}
+
+Our operation is "+" defined such that we perform normal addition then perform modulo n on top of it.
+
+In \\( \mathbb{Z}_7 \\), 3 + 6 = 2 (because it is 3 + 6 = 9 % 7 = 2)
+
+Question: What is the value of 11 + 11 in \\( \mathbb{Z}_{12} \\)?
+
+Answer: 10
+
+Question: What is the value of 1 + 1 in \\( \mathbb{Z}_2 \\)?
+
+Answer: 0
+
+Question: Is \\( \mathbb{Z}_n \\) a group?
+
+Answer: Yes it is! Let's check each of the properties of a group!
+
+Closure: Yes! This is in fact true from a property of modulo. 
+When we modulo n, we will always get a value between 0 and n-1
+
+Associative: Yes! Because addition is associative in general.
+
+Identity: 0 is our identity element
+
+Inverse: Take an element \\( a \in \mathbb{Z}_n \\), the inverse of a is n-a! 
+
+So yes, \\( \mathbb{Z}_n \\) is a group!
+
+In fact, this is the first group that we encountered that is finite in size. The other group we know (addition in \\( \mathbb{R} \\)) has an infinite size.
+
+## Group of Units
+
+
+
+## General and Special Linear Group 
+
+
+
+## Orthogonal Group
+
 
 
